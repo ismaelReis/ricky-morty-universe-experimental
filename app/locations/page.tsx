@@ -1,8 +1,9 @@
 
-import styles from './Card.module.css'
+
 import { ILocation } from '../interfaces';
 import Link from 'next/link';
 import CardLocation from './CardLocation';
+import styles from './CardLocation.module.css';
 
 const getLocations = async () => {
     const res = await fetch('https://rickandmortyapi.com/api/location');

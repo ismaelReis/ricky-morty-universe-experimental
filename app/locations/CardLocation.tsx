@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import styles from './Card.module.css'
 import { ILocation } from '../interfaces';
 
 CardLocation.defaultProps = {
@@ -21,7 +20,7 @@ type myProps = {
 
 export default function CardLocation({ location }: myProps) {
     return (
-        <div className={styles.card}>
+        <div className={"card"}>
             <Image
                 src={"https://random.imagecdn.app/150/150?local=" + location.id}
                 alt="Portal"
@@ -30,7 +29,7 @@ export default function CardLocation({ location }: myProps) {
                 priority
                 style={{ width: "100%" }}
             />
-            <div className={styles.container}>
+            <div className={"container"}>
                 <h4><b>{location.name}</b></h4>
                 <hr />
                 <small>Type</small>
